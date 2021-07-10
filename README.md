@@ -1,6 +1,7 @@
 
 # This project was completed as a part of an interview.
 # An openapi spec was given. I had to develop some API from scratch and edit some endpoint.
+# pytest was used to test the app.
 # A blank template of data is kept in the data folder.
 
 > A way to import the contents of DSRs to the DB.
