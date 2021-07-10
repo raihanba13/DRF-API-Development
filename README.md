@@ -1,6 +1,7 @@
 
-## _Thanks for giving me the opportunity!_
-This documents contains the summary of the work that has been done.
+# This project was completed as a part of an interview.
+# An openapi spec was given. I had to develop some API from scratch and edit some endpoint.
+# A blank template of data is kept in the data folder.
 
 > A way to import the contents of DSRs to the DB.
 
@@ -18,7 +19,7 @@ method: POST
 Body:  
 ```sh
 {
-    "path": "my_data/Spotify_SpotifyFamilyPlan_SGAE_ES_EUR_20200101-20200331.tsv",
+    "path": "my_data/input_data.tsv",
     "period_start": "2020-01-01",
     "period_end": "2020-03-31",
     "status": "ingested",
@@ -58,15 +59,4 @@ An admin action delete_dsr_resource is used, this will delete the dsr data along
 
 Two test files are created to test serializers and views. Admin aciton is also tested from test_urls. 
 
-> Dockerfile
-
-Docker file (.tar) is attached as raihan_django_app.tar inside docker delivery folder. Also Dockerfile and docker-composer.json is in the project directory.
-
-> DSPs report DSRs containing hundreds of millions of usages. If you were to 
-  deploy this solution to production, would you do any change in the database 
-  or process, in order to import the usages? Which ones?
-  
-Since the data is big and currently there is very small relation, I think mongodb, Amazon Neptune are some solutions that should be taken into consideration. Read and write ratio is also one important parameter to consider.
-
-    
 
